@@ -1,3 +1,33 @@
+Metadata-Version: 2.1
+Name: hindi-readability
+Version: 0.1.0
+Summary: The first Python package for measuring readability of Hindi text using Devanagari-aware formulas
+Author-email: Prabhat Chaudhary <raja1999chaudhary@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Erprabhat8423/hindi-readability
+Project-URL: Repository, https://github.com/Erprabhat8423/hindi-readability
+Keywords: hindi,readability,nlp,devanagari,indic,flesch,grade-level,text-analysis,education
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Natural Language :: Hindi
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
 # hindi-readability 📖🇮🇳
 
 **The first Python package for measuring the readability of Hindi text.**
@@ -8,9 +38,9 @@ Zero external dependencies. Pure Python 3.9+.
 
 ## The Problem
 
-English has Flesch-Kincaid, Gunning Fog, and ARI readability formulas used in MS Word since 1992. **Hindi has nothing.**
+English has Flesch-Kincaid, Gunning Fog, and ARI — readability formulas used in MS Word since 1992. **Hindi has nothing.**
 
-India has 24.8 crore school students, 886 million internet users consuming Hindi content, and 14.7 lakh schools all producing and consuming Hindi text with no way to automatically measure whether it is easy or hard to read.
+India has 24.8 crore school students, 886 million internet users consuming Hindi content, and 14.7 lakh schools — all producing and consuming Hindi text with no way to automatically measure whether it is easy or hard to read.
 
 This package fills that gap with three **original formulas** designed specifically for Devanagari script.
 
@@ -68,7 +98,7 @@ rs.is_appropriate_for_grade("यह सरल पाठ है।", grade=5)  # 
 ## The Three Formulas
 
 ### 1. Hindi Readability Score (HRS)
-An ease score from **0 to 100** higher means easier. Inspired by Flesch Reading Ease but redesigned for Devanagari.
+An ease score from **0 to 100** — higher means easier. Inspired by Flesch Reading Ease but redesigned for Devanagari.
 
 | Score | Label | Suitable for |
 |-------|-------|-------------|
