@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "hindi-readability"
@@ -28,7 +28,7 @@ classifiers = [
   "Topic :: Text Processing :: Linguistic",
   "Natural Language :: Hindi",
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 dependencies = []
 
 [project.optional-dependencies]
