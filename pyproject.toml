@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "hindi-readability"
+version = "0.1.0"
+description = "The first Python package for measuring readability of Hindi text using Devanagari-aware formulas"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Prabhat Chaudhary", email = "raja1999chaudhary@gmail.com" }]
+keywords = [
+  "hindi", "readability", "nlp", "devanagari", "indic",
+  "flesch", "grade-level", "text-analysis", "education"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic",
+  "Natural Language :: Hindi",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "build", "twine"]
+
+[project.urls]
+Homepage   = "https://github.com/Erprabhat8423/hindi-readability"
+Repository = "https://github.com/Erprabhat8423/hindi-readability"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["hindi_readability*"]
