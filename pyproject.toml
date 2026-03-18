@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hindi-readability"
-version = "0.1.0"
+version = "0.2.0"
 description = "The first Python package for measuring readability of Hindi text using Devanagari-aware formulas"
 readme = "README.md"
 license = { text = "MIT" }
