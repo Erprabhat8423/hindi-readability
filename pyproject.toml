@@ -1,11 +1,11 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "hindi-readability"
-version = "0.2.0"
-description = "The first Python package for measuring readability of Hindi text using Devanagari-aware formulas"
+version = "0.3.0"
+description = "First practical Python implementation with Devanagari-specific features for Hindi text readability"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Prabhat Chaudhary", email = "raja1999chaudhary@gmail.com" }]

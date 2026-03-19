@@ -45,7 +45,7 @@ Weights chosen by linguistic reasoning:
 HGL maps HRS to Indian school grades (Class 1–12) using the same
 inverse relationship as Kincaid but re-calibrated for Hindi:
 
-  HGL = 17.2 - (HRS × 0.14)
+  HGL = 10.083 - (HRS × 0.1088)  ← corpus-calibrated v0.3.0
 
 HCI is a 0–1 normalized composite:
   HCI = weighted average of 4 sub-scores (syllable, sentence, conjunct, matra)
@@ -134,7 +134,7 @@ def hindi_grade_level(text: str) -> Dict[str, object]:
         cbse_level  : str   (e.g. "Madhyamik")
     """
     hrs = hindi_readability_score(text)
-    raw_grade = 17.2 - (hrs * 0.14)
+    raw_grade = 10.083 - (hrs * 0.1088)
     grade = max(1, min(13, round(raw_grade)))
 
     if grade <= 2:

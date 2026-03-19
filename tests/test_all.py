@@ -101,7 +101,7 @@ t("batch_score returns list",     len(batch) == 3)
 t("batch first is easy",          batch[0]["hrs"] > batch[2]["hrs"])
 
 # is_appropriate_for_grade
-t("easy text ok for grade 7",     rs.is_appropriate_for_grade(EASY, 7))
+t("easy text ok for grade 2",     rs.is_appropriate_for_grade(EASY, 2))
 t("hard text not ok for grade 5", not rs.is_appropriate_for_grade(HARD, 5))
 
 # simplify_suggestions
