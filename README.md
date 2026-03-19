@@ -32,6 +32,28 @@ pip install hindi-readability
 
 ---
 
+## Project structure
+
+```
+hindi-readability/
+├── data/   
+    ├── validation_dataset.csv # validation dataset (CSV)
+├── examples/                 # simple usage examples
+├── hindi_readability/        # Python package
+│   ├── __init__.py
+│   ├── formulas.py
+│   ├── scorer.py
+│   └── script.py
+├── tests/                    # unit tests
+    └── test_all.py
+├── validation/               # validation scripts
+├── README.md
+├── pyproject.toml
+└── LICENSE
+```
+
+---
+
 ## Quick Start
 
 ```python
