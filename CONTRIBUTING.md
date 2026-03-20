@@ -118,7 +118,7 @@ Open a GitHub Issue and include:
 
 ## Research Context
 
-This package is part of M.Tech Computer Science research at [Your College Name]. If you use this package or dataset in academic work, please cite:
+This package is part of M.Tech Computer Science research at Sagar Institute Of Technology and Management. If you use this package or dataset in academic work, please cite:
 
 ```bibtex
 @software{hindi_readability,
